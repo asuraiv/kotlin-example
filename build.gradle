@@ -19,7 +19,10 @@ repositories {
     mavenCentral()
 }
 
+apply plugin: 'java'
 apply plugin: 'kotlin'
+
+sourceCompatibility = '1.8'
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
