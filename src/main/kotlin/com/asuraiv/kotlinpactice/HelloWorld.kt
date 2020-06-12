@@ -1,6 +1,6 @@
 package com.asuraiv.kotlinpactice
 
-class Sample {
+class HelloWorld {
 
     companion object {
 
