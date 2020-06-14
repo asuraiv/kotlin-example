@@ -1,6 +1,6 @@
 package com.asuraiv.kotlinpactice.collection
 
-import com.asuraiv.kotlinpractice.function.LambdaFunctions.*
+import com.asuraiv.kotlinjavapractice.function.LambdaFunctions.*
 
 class CombineWithJava {
 

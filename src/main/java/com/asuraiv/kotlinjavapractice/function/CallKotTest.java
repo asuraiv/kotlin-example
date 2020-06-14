@@ -1,4 +1,4 @@
-package com.asuraiv.kotlinpractice.function;
+package com.asuraiv.kotlinjavapractice.function;
 
 import com.asuraiv.kotlinpactice.function.JoinStringKt;
 
