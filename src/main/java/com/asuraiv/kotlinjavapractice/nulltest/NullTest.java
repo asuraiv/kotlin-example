@@ -1,6 +1,6 @@
 package com.asuraiv.kotlinjavapractice.nulltest;
 
-import static com.asuraiv.kotlinpactice.nulltest.NullTestUtilsKt.yellAt;
+import static com.asuraiv.kotlinpractice.nulltest.NullTestUtilsKt.yellAt;
 
 public class NullTest {
 
