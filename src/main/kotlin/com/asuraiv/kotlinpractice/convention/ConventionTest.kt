@@ -36,6 +36,13 @@ operator fun Point.get(index: Int): Int {
     }
 }
 
+class Person(val name: String, val age: Int) {
+
+    // 'data'가 아닌 클래스에서 구조분해를 사용할 수 있게 하는 방법
+    operator fun component1() = name
+    operator fun component2() = age
+}
+
 class Matrix {
 
     var matrix: Array<Array<Int>>
@@ -62,6 +69,13 @@ fun main(args: Array<String>) {
     println(p * 1.5)
 
     println("Point 클래스 get 사용: ${p[1]}")
+
+    val (x, y) = p
+    println("구조 분해를 통한 값 접근. x: $x, y: $y")
+
+    val hong = Person("Hong", 30)
+    val (name, age) = hong
+    println("'non data'클래스에서 구조분해 사용. name: $name, age: $age")
 
     val matrix = Matrix(5, 10)
 
