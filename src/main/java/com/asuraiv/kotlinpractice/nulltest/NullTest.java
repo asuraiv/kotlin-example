@@ -1,4 +1,4 @@
-package com.asuraiv.kotlinjavapractice.nulltest;
+package com.asuraiv.kotlinpractice.nulltest;
 
 import static com.asuraiv.kotlinpractice.nulltest.NullTestUtilsKt.yellAt;
 

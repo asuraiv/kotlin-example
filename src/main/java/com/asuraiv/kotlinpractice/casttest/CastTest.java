@@ -1,4 +1,4 @@
-package com.asuraiv.kotlinjavapractice.casttest;
+package com.asuraiv.kotlinpractice.casttest;
 
 import java.math.BigInteger;
 

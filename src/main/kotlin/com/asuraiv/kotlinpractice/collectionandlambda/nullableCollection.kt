@@ -1,4 +1,4 @@
-package com.asuraiv.kotlinpractice.collection
+package com.asuraiv.kotlinpractice.collectionandlambda
 
 import java.io.BufferedReader
 import java.io.File

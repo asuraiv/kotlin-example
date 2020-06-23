@@ -1,8 +1,8 @@
-package com.asuraiv.kotlinpractice.collection
+package com.asuraiv.kotlinpractice.collectionandlambda
 
-import com.asuraiv.kotlinjavapractice.collection.CollectionUtils.upperCaseAll
+import com.asuraiv.kotlinpractice.collection.CollectionUtils.upperCaseAll
 
-fun main(args: Array<String>) {
+fun main() {
 
     val list = listOf("john", "marry", "james")
 

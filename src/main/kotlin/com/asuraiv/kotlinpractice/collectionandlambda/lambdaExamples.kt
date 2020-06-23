@@ -1,6 +1,4 @@
-package com.asuraiv.kotlinpractice.lambda
-
-data class Person(val name: String, val age: Int)
+package com.asuraiv.kotlinpractice.collectionandlambda
 
 fun findMaxAge(list: Collection<Person>) : Person? {
 

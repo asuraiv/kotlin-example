@@ -1,6 +1,6 @@
-package com.asuraiv.kotlinpractice.collection
+package com.asuraiv.kotlinpractice.withjava
 
-import com.asuraiv.kotlinjavapractice.function.LambdaFunctions.*
+import com.asuraiv.kotlinpractice.function.LambdaFunctions.*
 
 class CombineWithJava {
 

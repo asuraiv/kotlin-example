@@ -1,6 +1,4 @@
-package com.asuraiv.kotlinjavapractice.function;
-
-import com.asuraiv.kotlinpractice.function.JoinStringKt;
+package com.asuraiv.kotlinpractice.function;
 
 import java.util.Arrays;
 

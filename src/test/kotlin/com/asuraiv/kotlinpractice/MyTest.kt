@@ -1,4 +1,4 @@
-package com.asuraiv.kotlinjavapractice
+package com.asuraiv.kotlinpractice
 
 import org.junit.Assert
 import org.junit.Before

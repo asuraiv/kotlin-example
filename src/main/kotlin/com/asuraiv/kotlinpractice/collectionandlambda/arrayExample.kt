@@ -1,4 +1,4 @@
-package com.asuraiv.kotlinpractice.collection
+package com.asuraiv.kotlinpractice.collectionandlambda
 
 fun main(args: Array<String>) {
 
