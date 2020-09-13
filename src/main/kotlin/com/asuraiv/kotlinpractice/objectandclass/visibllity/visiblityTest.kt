@@ -22,3 +22,19 @@ fun TalkativeButton.giveSpeech() {
 }
 
  */
+
+class LengthCounter {
+    var counter: Int = 0
+        private set
+    fun addWord(word: String) {
+        counter += word.length
+    }
+}
+
+fun main() {
+
+    val counter = LengthCounter()
+    // counter.counter = 1 // Compile error (setter 의 가시성을 private 으로 지정했으므로)
+    counter.addWord("Hello World!")
+    println(counter.counter) // 12 출력
+}
