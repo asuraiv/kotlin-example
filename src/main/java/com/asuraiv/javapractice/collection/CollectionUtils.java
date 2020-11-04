@@ -1,4 +1,4 @@
-package com.asuraiv.kotlinpractice.collection;
+package com.asuraiv.javapractice.collection;
 
 import java.util.List;
 

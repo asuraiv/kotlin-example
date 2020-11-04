@@ -1,4 +1,4 @@
-package com.asuraiv.kotlinpractice.nulltest;
+package com.asuraiv.javapractice.nulltest;
 
 public class Person {
 

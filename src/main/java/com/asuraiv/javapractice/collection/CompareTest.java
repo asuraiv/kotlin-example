@@ -1,4 +1,4 @@
-package com.asuraiv.kotlinpractice.collection;
+package com.asuraiv.javapractice.collection;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -34,13 +34,7 @@ class Person implements Comparable<Person> {
 
 	@Override
 	public int compareTo(@NotNull Person other) {
-		if(this.age > other.age) {
-			return 1;
-		}
-		if(this.age < other.age) {
-			return -1;
-		}
-		return 0;
+		return Integer.compare(this.age, other.age);
 	}
 
 	@Override

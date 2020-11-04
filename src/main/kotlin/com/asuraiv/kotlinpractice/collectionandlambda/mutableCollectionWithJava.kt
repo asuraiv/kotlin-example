@@ -1,6 +1,6 @@
 package com.asuraiv.kotlinpractice.collectionandlambda
 
-import com.asuraiv.kotlinpractice.collection.CollectionUtils.upperCaseAll
+import com.asuraiv.javapractice.collection.CollectionUtils.upperCaseAll
 
 fun main() {
 

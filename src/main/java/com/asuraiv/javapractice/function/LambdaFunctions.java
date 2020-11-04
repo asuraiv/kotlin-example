@@ -1,4 +1,4 @@
-package com.asuraiv.kotlinpractice.function;
+package com.asuraiv.javapractice.function;
 
 public class LambdaFunctions {
 
