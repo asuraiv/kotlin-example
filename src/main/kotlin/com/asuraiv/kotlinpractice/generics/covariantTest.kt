@@ -19,6 +19,7 @@ class Herd<out T : Animal>(
     operator fun get(i: Int): T = list[i]
 }
 
+
 fun takeCareOfCats(cats: Herd<Cat>) {
     for(i in 0 until cats.size) {
         cats[i].cleanLitter()
