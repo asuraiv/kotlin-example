@@ -4,6 +4,10 @@ open class Animal {
     fun feed() {
         println("yum yum.")
     }
+
+    fun run() {
+        println("${this::class.simpleName} is running!")
+    }
 }
 
 class Cat : Animal() {
