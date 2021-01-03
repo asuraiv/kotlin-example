@@ -5,32 +5,31 @@ package com.asuraiv.kotlinpractice.leetcode
  */
 fun sortString(s: String): String {
 
-    var list = s.split("").filter(String::isNotBlank).toMutableList()
+    val list = s.split("").filter(String::isNotBlank).toMutableList()
 
     var min = true
 
     var answer = ""
 
+    var lastSet = mutableSetOf<String>()
+
     while(list.isNotEmpty()) {
-        list = (if(min) list.sorted() else list.sortedDescending()).toMutableList()
-        var last = ""
-        val popIdxList = mutableListOf<Int>()
-        for(i in list.indices) {
-            val curr = list[i]
-            if(curr == "") {
-                continue
-            }
-            if(curr != last) {
-                answer += curr
-                last = curr
-                popIdxList.add(i)
-            }
+
+        val removeVal = if(min) {
+            list.filter { !lastSet.contains(it) }.min()
+        } else {
+            list.filter { !lastSet.contains(it) }.max()
         }
-        for(idx in popIdxList) {
-            list[idx] = ""
+
+        if(removeVal == null) {
+            min = !min
+            lastSet = mutableSetOf()
+            continue
         }
-        list = list.filter(String::isNotBlank).toMutableList()
-        min = !min
+
+        answer += removeVal
+        list.remove(removeVal)
+        lastSet.add(removeVal)
     }
 
     return answer
