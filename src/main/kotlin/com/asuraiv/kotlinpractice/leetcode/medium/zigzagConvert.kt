@@ -17,41 +17,36 @@ package com.asuraiv.kotlinpractice.leetcode.medium
  */
 fun convert(s: String, numRows: Int): String {
 
-    val marker = Array(size = s.length) { 0 }
+    val map = mutableMapOf<Int, String>()
 
-    var plus = true
+    var down = true
 
     var zigzagIdx = 0
 
     for(i in s.indices) {
 
-        marker[i] = zigzagIdx
+        map[zigzagIdx] = (map[zigzagIdx] ?: "") + s[i]
 
         if(zigzagIdx == (numRows - 1)) {
-            plus = false
+            down = false
         }
 
         if (zigzagIdx == 0) {
-            plus = true
+            down = true
         }
 
-        zigzagIdx = if(plus) ++zigzagIdx else --zigzagIdx
+        zigzagIdx = if(down) ++zigzagIdx else /* up */ --zigzagIdx
     }
 
     var answer = ""
 
-    for(i in 0 until numRows) {
-
-        for(j in s.indices) {
-            if(marker[j] == i) {
-                answer += s[j]
-            }
-        }
+    for(key in map.keys) {
+        answer += map[key]
     }
 
     return answer
 }
 
 fun main() {
-    assert(convert(s = "PAYPALISHIRING", numRows = 4) == "PINALSIGYAHRPI")
+    assert(convert(s = "PAYPALISHIRING", numRows = 3) == "PAHNAPLSIIGYIR")
 }
